@@ -1,7 +1,7 @@
 name: EnvironmentExample
 on: workflow_dispatch
 jobs: 
-  Dev-Deployment-Job
+  Dev-Deployment-Job:
     name:DevDeployment
     runs-on:ubuntu-latest
     evironment:Development
