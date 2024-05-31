@@ -2,13 +2,14 @@ name: EnvironmentExample
 on: workflow_dispatch
 jobs: 
   Dev-Deployment-Job:
-    name:DevDeployment
-    runs-on:ubuntu-latest
-    evironment:Development
+    name: DevDeployment
+    runs-on: ubuntu-latest
+    environment: Development
     steps:
       - shell: bash
         run: |
           echo ${{ vars.DemoVar }}
+          
   Prod-Deployment-Job:
     name: ProdDeployment
     runs-on: ubuntu-latest
